@@ -33,10 +33,12 @@ function resize() {
 	var altura = $('body').height() + 'px';
 	console.log(altura);
 
-  	$('.mobile').slimScroll({
-        height: altura
-    });
+	var config = {
+		height: altura
+	};
 
+	console.log(config);
+  	$('.mobile').slimScroll(config);
     console.log(':D');
 
 }
